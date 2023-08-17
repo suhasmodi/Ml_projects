@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 import pickle 
 
-model=pickle.load(open('model.pkl', 'rb'))
+model=pickle.load(open('iris_classification/model.pkl', 'rb'))
 data=pd.read_csv("Iris.csv")
 
 
