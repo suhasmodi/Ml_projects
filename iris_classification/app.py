@@ -5,7 +5,7 @@ from PIL import Image
 import pickle 
 
 model=pickle.load(open('iris_classification/model.pkl', 'rb'))
-data=pd.read_csv("Iris.csv")
+data=pd.read_csv("iris_classification/Iris.csv")
 
 
 
@@ -44,14 +44,14 @@ def main():
 
   st.success(prediction)
   if prediction=='Iris sentos': 
-      image = Image.open('iris_sentos.jpg')
+      image = Image.open('iris_classification/iris_sentos.jpg')
       st.image(image, caption='Iris Sentos')
   elif prediction=="Iris Virginica":
-      image = Image.open('Iris-virginica.jpg')
+      image = Image.open('iris_classification/Iris-virginica.jpg')
       st.image(image, caption='Iris Verginica')
 
   elif prediction=="Iris Virsicolor":
-    image=Image.open('Iris-versicolor.jpg')
+    image=Image.open('iris_classification/Iris-versicolor.jpg')
     st.image(image,caption="iris versicolor")
 
 
