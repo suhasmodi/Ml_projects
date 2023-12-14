@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 import pickle 
+import sklearn
 
 model=pickle.load(open('iris_classification/model.pkl', 'rb'))
 data=pd.read_csv("iris_classification/Iris.csv")
